@@ -1,1 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+body{
+  font-family: 'DM Sans', 'sans-serif';
+}
 
+.nav-black{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.elewa-logo{
+  width: 240px;
+  height: 50px;
+  object-fit: fill;
+}
+
+.mt{
+  margin-top: 100px !important;
+}
+
+.footer-logo{
+  width: 32px;
+  height: 32px;
+  margin-left: 25px;
+
+}
+
+.elewa-team{
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(70%);
+  width: 100%;
+
+}
+
+.about-txt{
+  top: 280px;
+  margin-left: 70px;
+}
+
+/* Cards.css */
+
+.card-container {
+  width: 100%;
+  display: flex;
+  overflow: hidden; /* Hide the scrollbar */
+  margin: 0;
+}
+
+.card-row {
+  display: flex;
+  width: 100%;
+  transform: translateX(calc(-100% * var(--index))); /* Scroll by translating */
+  transition: transform 0.5s;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin: 0 10px;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border: none;
+}
+
+.card.visible {
+  display: block;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-button {
+  background-color: rgba(255, 255, 255, 0.066);
+  border-radius: 50%;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+ b{
+  background-color: rgba(240, 248, 255, 0);
+ }
+
+/* Default styles for the navbar with a white background */
+.navbar {
+  background-color: rgb(7, 7, 7);
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Styles to change the background to black when scrolling up */
+.navbar-show {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Styles to hide the navbar when scrolling down */
+.navbar-hide {
+  display: none !important;
+}
+
+/* Styles for the white border at the top when the background is white */
+.border-white {
+  border-bottom: 1px solid rgba(8, 1, 1, 0);
+}
+
+.wt{
+  height: 80px;
+  width: 90px;
+}
+
+.cirl{
+  height: 50px;
+  width: 100px;
+}
+
+.mp{
+  height: 80vh;
+}
+
+.wi{
+  width: 40px;
+  height: 40px;
+}
+
+
+
+
+
+
+.button-container {
+  position: relative;
+  margin-left: 70px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+  
+  
+.btno {
+   background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 8px 3px;
+  cursor: pointer;
+  border-radius: 40px;
+  text-align: center;
+  border: 1px solid black;
+  transition: 1s;
+}
+
+.btno:hover{
+  background-color: white;
+  color: black;
+  
+  
+}
+
+.btno:hover .circle{
+  background-color: black;
+  color: white;
+  left: -105px;
+  transition: left 1s;
+
+}
+
+.circle {
+  color: black;
+  font-weight: bold;
+  background: white;
+  border-radius: 50%;
+  margin-left: 2px;
+  bottom: 1px;
+  padding: 5px 7.5px;
+  position: relative;
+  left: 0;
+  transition: left 1.5s;
+
+}
+
+
+.text {
+   padding: 3px;
+   position: relative;
+   transition: 0s;
+   bottom: 1px;
+}
+
+.btno:hover .text{
+  
+ right: -33px;
+  
+}
+
+.bg-part-2{
+background-color: #f4f4f4;
+}
+
+.c{
+  object-fit: cover;
+}
+
+.invest-txt{
+  top: 200px;
+  margin-left: 70px;
+}
+
+.ls{
+  letter-spacing: 2px;
+}
+
+.button-containeri {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+  
+  
+.btni {
+   background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 8px 3px;
+  cursor: pointer;
+  border-radius: 40px;
+  text-align: center;
+  border: 1px solid black;
+  transition: 1s;
+}
+
+.btni:hover{
+  background-color: white;
+  color: black;
+  
+  
+}
+
+.btni:hover .circlei{
+  background-color: black;
+  color: white;
+  left: -138px;
+  transition: left 1s;
+
+}
+
+.circlei {
+  color: black;
+  font-weight: bold;
+  background: white;
+  border-radius: 50%;
+  margin-left: 2px;
+  bottom: 1px;
+  padding: 5px 7.5px;
+  position: relative;
+  left: 0;
+  transition: left 1.5s;
+
+}
+
+
+.texti {
+   padding: 3px;
+   position: relative;
+   transition: 0s;
+   bottom: 1px;
+}
+
+.btni:hover .texti{
+  
+ right: -33px;
+  
+}
+
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  white-space: nowrap;
+  animation: marquee 70s linear infinite; /* Adjust animation duration as needed */
+  margin-bottom: 150px;
+  margin-top: 30px;
+}
+
+.marquee-item {
+  display: inline-block;
+  padding: 0 40px; /* Add padding to separate items */
+}
+
+@keyframes marquee {
+  100% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.mer{
+height: 100px;
+  width: 100%;
+  object-fit: fill;
+  padding: 20px;
+}

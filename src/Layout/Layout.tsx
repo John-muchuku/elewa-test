@@ -9,9 +9,7 @@ export default function Layout() {
 
 <div>
     <Navbar/>
-        <div 
-             style={{ minHeight: '100vh', backgroundColor: '#FFFFF' }}
-             className=''>
+        <div>
                 <Outlet />
         </div>
     <Footer/>
